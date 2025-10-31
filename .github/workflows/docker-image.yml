@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build  -t boltzgen:weights$(date +%s) --build-arg DOWNLOAD_WEIGHTS=true . --file Dockerfile 
+      run: docker build  -t boltzgen$(date +%s)  . --file Dockerfile 
